@@ -1,0 +1,1 @@
+print("2-marta yangi code yozildi")
