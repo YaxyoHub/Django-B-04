@@ -1,0 +1,6 @@
+.env
+db.sqlite3
+index.html
+user_model.md
+.venv/
+__pycache__/

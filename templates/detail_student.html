@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Student Detail{% endblock %}
+
+{% block content %}
+
+<img style="height: 400px; width: 300px; border-radius: 20px;" src="{{ student.image.url }}" alt="">
+<h1 style="color: blue;">{{ student.ism }}</h1>
+
+<p style="color: blue;">{{ student.familiya }}</p>
+<p style="color: blue;">{{ student.yosh }}</p>
+<p style="color: blue;">{{ student.manzil }}</p>
+<p style="color: blue;">{{ student.is_active }}</p>
+<p style="color: blue;"> Ro'yxatdan o'tgan sanasi: {{ student.created_at }}</p>
+
+<a href="{% url 'edit_student' student.pk %}">Edit Student</a>
+
+<br><br>
+
+<a href="{% url 'delete_student' student.pk %}">Delete Student</a>
+
+<br><br>
+
+<a href="{% url 'students' %}">Ortga</a>
+
+{% endblock %}
+
+
